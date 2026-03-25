@@ -1,0 +1,39 @@
+name: FitnessChallenge
+options:
+  bundleIdPrefix: com.globalvibes
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15"
+packages:
+  FirebaseSDK:
+    url: https://github.com/firebase/firebase-ios-sdk
+    from: "10.0.0"
+targets:
+  FitnessChallenge:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - FitnessChallenge
+    resources:
+      - path: FitnessChallenge/Info.plist
+      - path: Assets.xcassets
+      - path: FitnessChallenge/GoogleService-Info.plist
+    dependencies:
+      - package: FirebaseSDK
+        product: FirebaseFirestore
+      - package: FirebaseSDK
+        product: FirebaseFirestoreSwift
+      - package: FirebaseSDK
+        product: FirebaseAnalytics
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.globalvibes.FitnessChallenge
+        DEVELOPMENT_TEAM: 4PDB3TQD2G
+        SWIFT_VERSION: "5.0"
+        INFOPLIST_FILE: FitnessChallenge/Info.plist
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

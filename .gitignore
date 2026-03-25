@@ -1,0 +1,33 @@
+# Secrets — never commit these
+FitnessChallenge/GoogleService-Info.plist
+admin/config.js
+
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# XcodeGen
+*.xcodeproj
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node (admin dashboard)
+node_modules/
+npm-debug.log*
+
+# Firebase
+.firebase/
+firebase-debug.log
